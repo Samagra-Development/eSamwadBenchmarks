@@ -19,3 +19,7 @@ response = function(status, headers, body)
     end
     return wrk.format(rcounter)
 end
+
+done = function(summary, latency, requests)
+    print("Total requests with 200 status: "..rcounter)
+end
